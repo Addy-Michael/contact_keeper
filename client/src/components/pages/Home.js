@@ -7,10 +7,10 @@ import AuthContext from "../../context/auth/authContext";
 const Home = () => {
   const authContext = useContext(AuthContext);
 
-  // useEffect(() => {
-  //   authContext.loadUser();
-  //   // eslint-disabled-next-line
-  // }, []);
+  useEffect(() => {
+    authContext.loadUser();
+    // eslint-disabled-next-line
+  }, []);
 
   return (
     <div className='grid-2'>
